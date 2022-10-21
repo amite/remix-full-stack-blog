@@ -115,6 +115,7 @@ jobs:
           start: npm run start:mocks
           wait-on: "http://localhost:8811"
         env:
+          ADMIN_EMAIL: "rachel@remix.run"
           PORT: "8811"
 
   build:
