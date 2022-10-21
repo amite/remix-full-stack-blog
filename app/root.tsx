@@ -1,6 +1,5 @@
 import type {
   LinksFunction,
-  LoaderArgs,
   LoaderFunction,
   MetaFunction,
 } from "@remix-run/node";
@@ -42,8 +41,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function App() {
-  const data = useLoaderData() as LoaderData;
-
+  const data = useLoaderData();
   return (
     <html lang="en" className="h-full">
       <head>
